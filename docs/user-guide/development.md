@@ -34,7 +34,7 @@ included.
 ```nix
 # shell.nix
 let
-  hsPkgs = import ./default.nix {};
+  hsPkgs = import ./default.nix;
 in
   hsPkgs.my-package.components.all
 ```
