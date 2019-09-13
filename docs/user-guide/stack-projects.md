@@ -48,7 +48,7 @@ let
   # Instantiate a package set using the generated file.
   pkgSet = haskell.mkStackPkgSet {
     stack-pkgs = import ./pkgs.nix;
-    pkg-def-overlays = [];
+    pkg-def-extras = [];
     modules = [];
   };
 in
